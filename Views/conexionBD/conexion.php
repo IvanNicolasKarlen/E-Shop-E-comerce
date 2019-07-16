@@ -234,6 +234,41 @@ class Conexion{
 		$consulta->fetch();
 		return $nombrep;
 	}
+
+	public function buscarPreguntas($idC,$idV,$idP){
+		$consulta=$this->msq->prepare("SELECT * FROM pregunta WHERE idComprador=? AND idVendedor=? AND idProducto=?");
+		$consulta->bind_param("iii",$idC,$idV,$idP);
+		$consulta->execute();
+		return $consulta->get_result();
+
+	}
+
+	public function insertarPregunta($idC,$idV,$idP,$texto){
+		$consulta=$this->msq->prepare("INSERT INTO pregunta (texto,idComprador,idVendedor,idProducto)
+											VALUES (?,?,?,?)");
+		$consulta->bind_param("siii",$texto,$idC,$idV,$idP);
+		if($consulta->execute()){
+			return "Pregunta realizada con exito";
+		}else{
+			return "Ha ocurrido un error al realizar tu pregunta";
+		}
+	}
+	public function buscarRespuestas($idPregunta){
+		$consulta=$this->msq->prepare("SELECT idUsuario, texto, fecha FROM respuesta WHERE idPregunta=?");
+		$consulta->bind_param("i",$idPregunta);
+		$consulta->execute();
+		return $consulta->get_result();
+	}
+	public function insertarRespuesta($idPregunta,$idusuario,$texto){
+		$consulta=$this->msq->prepare("INSERT INTO respuesta (idUsuario,texto,idPregunta)
+											VALUES(?,?,?)");
+		$consulta->bind_param("isi",$idusuario,$texto,$idPregunta);
+		if($consulta->execute()){
+			return "Respuesta añadida con exito";
+		}else{
+			return "Ha ocurrido un error al agregar tu respuesta";
+		}
+	}
 }
 
 

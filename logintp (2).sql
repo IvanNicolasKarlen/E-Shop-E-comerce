@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-07-2019 a las 05:04:54
+-- Tiempo de generación: 16-07-2019 a las 08:23:56
 -- Versión del servidor: 5.7.25-log
--- Versión de PHP: 7.3.0
+-- Versión de PHP: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `categoria` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(80) NOT NULL,
+  `nombre` varchar(80) COLLATE utf8_spanish_ci NOT NULL,
   `visitas` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `categoria`
@@ -45,7 +45,6 @@ INSERT INTO `categoria` (`id`, `nombre`, `visitas`) VALUES
 (4, 'Productos y otros', 329);
 
 -- --------------------------------------------------------
-
 --
 -- Estructura de tabla para la tabla `comentarios`
 --
@@ -59,7 +58,7 @@ CREATE TABLE `comentarios` (
   `idVendedor` int(11) NOT NULL,
   `idChat` int(11) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `comentarios`
@@ -88,6 +87,7 @@ INSERT INTO `comentarios` (`id`, `texto`, `idUsuario`, `nombreUsuario`, `idProdu
 -- --------------------------------------------------------
 
 --
+--
 -- Estructura de tabla para la tabla `compra`
 --
 
@@ -97,7 +97,7 @@ CREATE TABLE `compra` (
   `idProducto` int(11) NOT NULL,
   `cantidad` int(11) NOT NULL,
   `costo` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `compra`
@@ -118,8 +118,8 @@ INSERT INTO `compra` (`id`, `idUsuario`, `idProducto`, `cantidad`, `costo`) VALU
 CREATE TABLE `imgprincipal` (
   `id` int(11) NOT NULL,
   `idProducto` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `imgprincipal`
@@ -146,8 +146,8 @@ INSERT INTO `imgprincipal` (`id`, `idProducto`, `nombre`) VALUES
 CREATE TABLE `imgproducto` (
   `id` int(11) NOT NULL,
   `idProducto` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `imgproducto`
@@ -165,8 +165,8 @@ INSERT INTO `imgproducto` (`id`, `idProducto`, `nombre`) VALUES
 
 CREATE TABLE `pais` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `pais`
@@ -189,7 +189,7 @@ INSERT INTO `pais` (`id`, `nombre`) VALUES
 CREATE TABLE `porcentaje` (
   `id` int(11) NOT NULL,
   `valor` double DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `porcentaje`
@@ -201,28 +201,42 @@ INSERT INTO `porcentaje` (`id`, `valor`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `pregunta`
+--
+
+CREATE TABLE `pregunta` (
+  `id` int(11) NOT NULL,
+  `texto` varchar(600) COLLATE utf8_spanish_ci NOT NULL,
+  `idComprador` int(11) NOT NULL,
+  `idVendedor` int(11) NOT NULL,
+  `idProducto` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `producto`
 --
 
 CREATE TABLE `producto` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(200) NOT NULL,
-  `estado` varchar(60) NOT NULL,
+  `nombre` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `estado` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
   `precio` double NOT NULL,
-  `formasdepago` varchar(100) NOT NULL,
-  `envio` varchar(100) NOT NULL,
-  `marca` varchar(70) NOT NULL,
+  `formasdepago` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `envio` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `marca` varchar(70) COLLATE utf8_spanish_ci NOT NULL,
   `stock` int(11) NOT NULL,
-  `genero` varchar(60) NOT NULL,
-  `categoria` varchar(110) NOT NULL,
-  `palabrasClaves` varchar(110) NOT NULL,
-  `descripcion` varchar(600) NOT NULL,
+  `genero` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
+  `categoria` varchar(110) COLLATE utf8_spanish_ci NOT NULL,
+  `palabrasClaves` varchar(110) COLLATE utf8_spanish_ci NOT NULL,
+  `descripcion` varchar(600) COLLATE utf8_spanish_ci NOT NULL,
   `visitas` int(11) NOT NULL,
   `idUsuario` int(11) NOT NULL,
-  `latitud` varchar(120) NOT NULL,
-  `longitud` varchar(120) NOT NULL,
+  `latitud` varchar(120) COLLATE utf8_spanish_ci NOT NULL,
+  `longitud` varchar(120) COLLATE utf8_spanish_ci NOT NULL,
   `ventas` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `producto`
@@ -251,7 +265,7 @@ CREATE TABLE `productocarrito` (
   `idUsuario` int(11) NOT NULL,
   `idProducto` int(11) NOT NULL,
   `cantidad` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `productocarrito`
@@ -267,13 +281,26 @@ INSERT INTO `productocarrito` (`id`, `idUsuario`, `idProducto`, `cantidad`) VALU
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `respuesta`
+--
+
+CREATE TABLE `respuesta` (
+  `id` int(11) NOT NULL,
+  `idUsuario` int(11) NOT NULL,
+  `texto` varchar(600) COLLATE utf8_spanish_ci NOT NULL,
+  `idPregunta` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `tipouser`
 --
 
 CREATE TABLE `tipouser` (
   `id` int(11) NOT NULL,
-  `tipo` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `tipo` varchar(50) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `tipouser`
@@ -295,7 +322,7 @@ CREATE TABLE `transaccion` (
   `idPorcentaje` int(11) DEFAULT NULL,
   `idUsuario` int(11) DEFAULT NULL,
   `total` double DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `transaccion`
@@ -316,16 +343,16 @@ INSERT INTO `transaccion` (`id`, `idPorcentaje`, `idUsuario`, `total`) VALUES
 
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `Nombre` varchar(20) NOT NULL,
-  `estado` varchar(200) NOT NULL,
-  `pais` varchar(100) NOT NULL,
-  `latitud` varchar(100) NOT NULL,
-  `longitud` varchar(100) NOT NULL,
-  `rol` varchar(100) NOT NULL,
+  `email` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `password` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `Nombre` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `estado` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `pais` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `latitud` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `longitud` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `rol` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `idTipoUser` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
@@ -359,11 +386,11 @@ INSERT INTO `usuario` (`id`, `email`, `password`, `Nombre`, `estado`, `pais`, `l
 
 CREATE TABLE `valoracion` (
   `id` int(11) NOT NULL,
-  `comentario` varchar(600) DEFAULT NULL,
+  `comentario` varchar(600) COLLATE utf8_spanish_ci DEFAULT NULL,
   `puntaje` int(11) NOT NULL,
   `idUsuario` int(11) DEFAULT NULL,
   `idVendedor` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `valoracion`
@@ -383,13 +410,13 @@ INSERT INTO `valoracion` (`id`, `comentario`, `puntaje`, `idUsuario`, `idVendedo
 --
 ALTER TABLE `categoria`
   ADD PRIMARY KEY (`id`);
-
---
+  
 -- Indices de la tabla `comentarios`
 --
 ALTER TABLE `comentarios`
   ADD PRIMARY KEY (`id`);
 
+--
 --
 -- Indices de la tabla `compra`
 --
@@ -415,6 +442,15 @@ ALTER TABLE `porcentaje`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `pregunta`
+--
+ALTER TABLE `pregunta`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idComprador` (`idComprador`),
+  ADD KEY `idVendedor` (`idVendedor`),
+  ADD KEY `idProducto` (`idProducto`);
+
+--
 -- Indices de la tabla `producto`
 --
 ALTER TABLE `producto`
@@ -427,6 +463,14 @@ ALTER TABLE `producto` ADD FULLTEXT KEY `nombre` (`nombre`,`estado`,`marca`,`gen
 --
 ALTER TABLE `productocarrito`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `respuesta`
+--
+ALTER TABLE `respuesta`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idUsuario` (`idUsuario`),
+  ADD KEY `idPregunta` (`idPregunta`);
 
 --
 -- Indices de la tabla `tipouser`
@@ -466,13 +510,13 @@ ALTER TABLE `valoracion`
 --
 ALTER TABLE `categoria`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
+  
 -- AUTO_INCREMENT de la tabla `comentarios`
 --
 ALTER TABLE `comentarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
+--
 --
 -- AUTO_INCREMENT de la tabla `compra`
 --
@@ -498,6 +542,12 @@ ALTER TABLE `porcentaje`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT de la tabla `pregunta`
+--
+ALTER TABLE `pregunta`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
@@ -508,6 +558,12 @@ ALTER TABLE `producto`
 --
 ALTER TABLE `productocarrito`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+--
+-- AUTO_INCREMENT de la tabla `respuesta`
+--
+ALTER TABLE `respuesta`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `transaccion`
@@ -526,10 +582,25 @@ ALTER TABLE `valoracion`
 --
 
 --
+-- Filtros para la tabla `pregunta`
+--
+ALTER TABLE `pregunta`
+  ADD CONSTRAINT `pregunta_ibfk_1` FOREIGN KEY (`idComprador`) REFERENCES `usuario` (`id`),
+  ADD CONSTRAINT `pregunta_ibfk_2` FOREIGN KEY (`idVendedor`) REFERENCES `usuario` (`id`),
+  ADD CONSTRAINT `pregunta_ibfk_3` FOREIGN KEY (`idProducto`) REFERENCES `producto` (`id`);
+
+--
 -- Filtros para la tabla `producto`
 --
 ALTER TABLE `producto`
   ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`id`);
+
+--
+-- Filtros para la tabla `respuesta`
+--
+ALTER TABLE `respuesta`
+  ADD CONSTRAINT `respuesta_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`id`),
+  ADD CONSTRAINT `respuesta_ibfk_2` FOREIGN KEY (`idPregunta`) REFERENCES `pregunta` (`id`);
 
 --
 -- Filtros para la tabla `transaccion`
