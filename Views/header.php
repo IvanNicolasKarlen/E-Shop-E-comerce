@@ -142,7 +142,8 @@ while($n = mysqli_fetch_array($resultado))
                                     Preguntas en mis publicaciones</a></li>
                             <li><a href="mispreguntas.php"><i class="fa fa-heart-o"></i>
                                     Preguntas que hice</a></li>
-                            <li><a href="#"><i class="fa fa-check"></i> Ventas</a></li>
+									<li><a href="ComprasHechas.php"><i class="fa fa-heart-o"></i> Compras</a></li>
+                            <li><a href="VentasHechas.php"><i class="fa fa-check"></i> Ventas</a></li>
                             <li><a href="listarPublicaciones.php"><i class="fa fa-list"></i> Publicaciones</a></li>
 
                         </ul>

@@ -32,11 +32,11 @@ $respuesta=$conexion->buscarRespuestas($idPregunta);
     </div>
     <?php } //fin if
     else{
-        echo "<h2>No hay respuestas :(</h2>";
+        echo "<h2>No hay respuestas </h2>";
     } ?>
     <form class="review-form" method="post" action="mostrarChat.php">
         <div class="form-group">
-           <textarea class="input" name="texto" placeholder="Escribe aquí tu respuesta"></textarea>
+           <textarea class="input" name="texto" placeholder="Escribe aquí tu respuesta" required></textarea>
         </div>
         <?php echo "<input style='display: none' value='$idPregunta' name='idPregunta'>"; ?>
         <button class='primary-btn'

@@ -7,7 +7,17 @@ $id_Usuario=$_SESSION['id'];
 $pregunta=$conexion->buscarPreguntasEnMisPublicaciones($id_Usuario);
 ?>
 <div class="container-fluid">
-    <?php if($pregunta->num_rows>0){ ?>
+
+
+ <?php if($pregunta->num_rows==0){ ?>
+   <br><h3 class="text-center"> Aún no hay preguntas en tu publicación </h3><br>
+
+
+
+
+
+
+ <?php }else{ ?>
     <table  class="table" >
 
         <thead>
@@ -27,8 +37,8 @@ $pregunta=$conexion->buscarPreguntasEnMisPublicaciones($id_Usuario);
                 <?php $producto = $conexion->consultarPublicaciones($preguntas['idProducto']);
                 if($producto->num_rows>0){
                     while($productos=$producto->fetch_assoc()){     ?>
-                        <form action="detallesProducto.php" method="post">
-                            <input type="hidden" name="ProductoNombre" value="<?php echo $productos['nombre'];?>">
+                       <form METHOD="get" action="detallesProducto.php?Productoid=<?php echo $f['id'];?>&Nombre=<?php echo $f['nombre'];?>&categoria=<?php echo $f['categoria'];?> ">
+						    <input type="hidden" name="ProductoNombre" value="<?php echo $productos['nombre'];?>">
                             <input type="hidden" name="Productoid" value="<?php echo $productos['id'];?>">
                             <input type="hidden" name="Categoria" value="<?php echo $productos['categoria'];?>">
                             <td>

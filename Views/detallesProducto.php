@@ -12,25 +12,17 @@ include_once("header.php");
 
 <?php
 
-if (isset($_POST["detalles"])) {
+if (isset($_GET["detalles"])) {
 
     require_once("conexionBD/conexion.php");// incluir la configuracion de conexion a la BD
     //Abrir conexion
     $conexion = new Conexion;
-    $idProducto = $_POST["Productoid"];
-    $NombreProducto = $_POST["ProductoNombre"];
+    $idProducto = $_GET["Productoid"];
+    $NombreProducto = $_GET["ProductoNombre"];
 
     //Traer el articulo que presiono ver más
     $consulta = "SELECT * FROM producto WHERE id = '" . $idProducto . "'";
 
-
-    //Para mostrar los articulos relacionados a la busqueda hecha con un nombre parecido al producto que esta viendo
-    //$consultaExtra="SELECT * FROM producto WHERE nombre like '%".$NombreProducto."%'";
-
-
-    //Saber si se hizo la compra, si el usuario esta en la tabla compra
-    //Si está, traer toda esa fila.
-    //Mostrar el chat
 
     //Id del usuario que esta usando
     $id_Usuario = $_SESSION['id'];
@@ -51,8 +43,7 @@ if (isset($_POST["detalles"])) {
     }
 
 
-    $chatprivado = "SELECT * FROM comentarios WHERE  idUsuario='" . $id_Usuario . "' and idProducto = '" . $idProducto . "' and idVendedor = '" . $idVendedor . "' or idVendedor = '" . $id_Usuario . "' and idProducto = '" . $idProducto . "' limit 1";
-
+  
 
     $estado = "SELECT * 
 				FROM compra as c
@@ -61,16 +52,9 @@ if (isset($_POST["detalles"])) {
 				or p.idUsuario = '" . $id_Usuario . "' and	c.idProducto =  '" . $idProducto . "'";
 
     $resultado = $conexion->realizarConsulta($consulta);
-//	$extra= $conexion->realizarConsulta($consultaExtra);
     $consultaEstado = $conexion->realizarConsulta($estado);
 
-    $privado = $conexion->realizarConsulta($chatprivado);
-    $EstadoDePrivado = $conexion->cantidadDeFilas($consultaEstado);
-
-
-    //$publico= $conexion->realizarConsulta($chatpublico);
-
-
+  
     //Contiene los metodos de la categoria mas buscada
     require_once("CategoriasMasVisitadas.php");
     include_once("ProductoMasVisitado.php");
@@ -187,8 +171,8 @@ $resultado5 = $conexion->realizarConsulta($consulta5);
 
                 </div>
 
-                <form method="post" action="ProcesaAddCarrito.php">
-                    <div class="col-md-6">
+                <form method="get" action="ProcesaAddCarrito.php">
+					    <div class="col-md-6">
                         <div class="product-body">
                             <div class="product-label">
                                 <span>New</span>
@@ -242,11 +226,9 @@ $resultado5 = $conexion->realizarConsulta($consulta5);
                                 ?>
 
 
-                                <input type="hidden" name="Add"
-                                       value="<?php echo $f['id']; ?>">
-                                <input type="hidden" name="id_Usuario" value="$_Session['id']">
-
-                                <input type="hidden" name="id_Usuario" value="$_Session['id']">
+                                <input type="hidden" name="Add" value="<?php echo $f['id']; ?>">
+                             
+								<input type="hidden" name="vendedor" value="<?php echo $f['idUsuario']; ?>">
                 </form>
 
                 <?php
@@ -375,35 +357,7 @@ $resultado5 = $conexion->realizarConsulta($consulta5);
                     </div>
                 </div>
 
-                <!--						<div id="tab4" class="tab-pane fade in">
-
-									<div class="row">
-										<div class="col-md-6">
-											<div class="product-reviews">
-											
-											<div class="single-review">
-
-												<div class="review-heading">
-
-														
-													</div>
-													<div class="review-body">
-													<form method="post" action="Mensajeria.php">
-													<button type="submit" class="btn-link text-center"> Ver todos los mensajes </button>
-													<input type="hidden" name="Vendedor" value="<?php echo $idVendedor; ?>">
-													<input type="hidden" name="Usuario" value="<?php echo $id_Usuario; ?>">
-													<input type="hidden" name="Producto" value="<?php echo $idProducto; ?>">
-													</form>
-													
-													</div>
-												</div>
-
-											</div>
-										</div>
-										
-									</div>
-
-								</div> -->
+              
 
 
             <?php include_once ("coments.php"); ?>

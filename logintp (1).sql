@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-07-2019 a las 08:23:56
+-- Tiempo de generación: 16-07-2019 a las 22:36:00
 -- Versión del servidor: 5.7.25-log
--- Versión de PHP: 7.3.3
+-- Versión de PHP: 7.3.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -42,18 +42,19 @@ INSERT INTO `categoria` (`id`, `nombre`, `visitas`) VALUES
 (1, 'Servicios', 1),
 (2, 'Inmuebles', 23),
 (3, 'Vehiculos', 10),
-(4, 'Productos y otros', 329);
+(4, 'Productos y otros', 335);
 
 -- --------------------------------------------------------
+
 --
 -- Estructura de tabla para la tabla `comentarios`
 --
 
 CREATE TABLE `comentarios` (
   `id` int(11) NOT NULL,
-  `texto` varchar(300) NOT NULL,
+  `texto` varchar(300) COLLATE utf8_spanish_ci NOT NULL,
   `idUsuario` int(11) NOT NULL,
-  `nombreUsuario` varchar(50) NOT NULL,
+  `nombreUsuario` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
   `idProducto` int(11) NOT NULL,
   `idVendedor` int(11) NOT NULL,
   `idChat` int(11) NOT NULL,
@@ -87,7 +88,6 @@ INSERT INTO `comentarios` (`id`, `texto`, `idUsuario`, `nombreUsuario`, `idProdu
 -- --------------------------------------------------------
 
 --
---
 -- Estructura de tabla para la tabla `compra`
 --
 
@@ -96,18 +96,21 @@ CREATE TABLE `compra` (
   `idUsuario` int(11) NOT NULL,
   `idProducto` int(11) NOT NULL,
   `cantidad` int(11) NOT NULL,
-  `costo` int(11) NOT NULL
+  `costo` int(11) NOT NULL,
+  `fecha` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `vendedor` varchar(100) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `compra`
 --
 
-INSERT INTO `compra` (`id`, `idUsuario`, `idProducto`, `cantidad`, `costo`) VALUES
-(19, 6, 1, 1, 1200),
-(20, 6, 3, 1, 700),
-(21, 6, 46, 1, 2520000),
-(26, 21, 1, 1, 1200);
+INSERT INTO `compra` (`id`, `idUsuario`, `idProducto`, `cantidad`, `costo`, `fecha`, `vendedor`) VALUES
+(19, 6, 1, 1, 1200, '2019-07-16 17:29:48', ''),
+(20, 6, 3, 1, 700, '2019-07-16 17:29:48', ''),
+(21, 6, 46, 1, 2520000, '2019-07-16 17:29:48', ''),
+(26, 21, 1, 1, 1200, '2019-07-16 17:29:48', ''),
+(31, 1, 1, 1, 1200, '2019-07-16 17:30:31', 'Ejemplo');
 
 -- --------------------------------------------------------
 
@@ -209,8 +212,16 @@ CREATE TABLE `pregunta` (
   `texto` varchar(600) COLLATE utf8_spanish_ci NOT NULL,
   `idComprador` int(11) NOT NULL,
   `idVendedor` int(11) NOT NULL,
-  `idProducto` int(11) NOT NULL
+  `idProducto` int(11) NOT NULL,
+  `fecha` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `pregunta`
+--
+
+INSERT INTO `pregunta` (`id`, `texto`, `idComprador`, `idVendedor`, `idProducto`, `fecha`) VALUES
+(1, 'Hola estas?', 6, 1, 1, '2019-07-16 17:33:47');
 
 -- --------------------------------------------------------
 
@@ -243,8 +254,8 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `nombre`, `estado`, `precio`, `formasdepago`, `envio`, `marca`, `stock`, `genero`, `categoria`, `palabrasClaves`, `descripcion`, `visitas`, `idUsuario`, `latitud`, `longitud`, `ventas`) VALUES
-(1, 'Zapatillas Modernas', 'Nuevo', 1200, 'Efectivo', 'Gratis', 'Nike', 11, 'Hombre', 'Productos y otros', 'palabra\nclave', 'descrip', 275, 1, '', '', 203),
-(2, 'Zapatillas Adidas', 'Usado', 1400, 'Efectivo', 'Gratis', 'Adidas', 1200, 'Hombre', 'Productos y otros', 'palabra\nclave', 'Zapatillas Adidas usadas pero impecables', 270, 3, '', '', 20),
+(1, 'Zapatillas Modernas', 'Nuevo', 1200, 'Efectivo', 'Gratis', 'Nike', 10, 'Hombre', 'Productos y otros', 'palabra\nclave', 'descrip', 280, 1, '', '', 204),
+(2, 'Zapatillas Adidas', 'Usado', 1400, 'Efectivo', 'Gratis', 'Adidas', 1200, 'Hombre', 'Productos y otros', 'palabra\nclave', 'Zapatillas Adidas usadas pero impecables', 271, 3, '', '', 20),
 (3, 'Promociono Ojotas', 'Usado', 700, '', 'Domicilio con Cargo', 'Torres', 1198, 'Unisex', 'Productos y otros', 'palabra\nclave', 'Soy una descripcion ', 286, 3, '', '', 6),
 (43, 'Vestido marinero PinUp', 'Nuevo', 3200, 'Transferencia Bancaria', 'Gratis', 'BrillaDark', 20, 'Mujer', 'Productos y otros', 'Vestido pinup', 'Hermoso vestido', 270, 7, '', '', 9),
 (44, 'Remeras para colegios', 'Nuevo', 300, 'Efectivo', 'Domicilio con cargo', 'Suavicer', 2000, 'Infantil', 'Productos y otros', 'Remeras Dibujos Colegios', 'Remeras para colegios primarios', 270, 2, '', '', 3),
@@ -264,19 +275,20 @@ CREATE TABLE `productocarrito` (
   `id` int(11) NOT NULL,
   `idUsuario` int(11) NOT NULL,
   `idProducto` int(11) NOT NULL,
-  `cantidad` int(11) NOT NULL
+  `cantidad` int(11) NOT NULL,
+  `vendedor` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `productocarrito`
 --
 
-INSERT INTO `productocarrito` (`id`, `idUsuario`, `idProducto`, `cantidad`) VALUES
-(1, 2, 44, 1),
-(2, 2, 46, 1),
-(4, 2, 45, 1),
-(5, 2, 1, 1),
-(21, 21, 1, 1);
+INSERT INTO `productocarrito` (`id`, `idUsuario`, `idProducto`, `cantidad`, `vendedor`) VALUES
+(1, 2, 44, 1, 0),
+(2, 2, 46, 1, 0),
+(4, 2, 45, 1, 0),
+(5, 2, 1, 1, 0),
+(21, 21, 1, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -288,7 +300,8 @@ CREATE TABLE `respuesta` (
   `id` int(11) NOT NULL,
   `idUsuario` int(11) NOT NULL,
   `texto` varchar(600) COLLATE utf8_spanish_ci NOT NULL,
-  `idPregunta` int(11) NOT NULL
+  `idPregunta` int(11) NOT NULL,
+  `fecha` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- --------------------------------------------------------
@@ -410,13 +423,13 @@ INSERT INTO `valoracion` (`id`, `comentario`, `puntaje`, `idUsuario`, `idVendedo
 --
 ALTER TABLE `categoria`
   ADD PRIMARY KEY (`id`);
-  
+
+--
 -- Indices de la tabla `comentarios`
 --
 ALTER TABLE `comentarios`
   ADD PRIMARY KEY (`id`);
 
---
 --
 -- Indices de la tabla `compra`
 --
@@ -510,18 +523,18 @@ ALTER TABLE `valoracion`
 --
 ALTER TABLE `categoria`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-  
+
+--
 -- AUTO_INCREMENT de la tabla `comentarios`
 --
 ALTER TABLE `comentarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
---
 -- AUTO_INCREMENT de la tabla `compra`
 --
 ALTER TABLE `compra`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT de la tabla `imgprincipal`
@@ -545,7 +558,7 @@ ALTER TABLE `porcentaje`
 -- AUTO_INCREMENT de la tabla `pregunta`
 --
 ALTER TABLE `pregunta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
@@ -557,7 +570,7 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT de la tabla `productocarrito`
 --
 ALTER TABLE `productocarrito`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de la tabla `respuesta`
