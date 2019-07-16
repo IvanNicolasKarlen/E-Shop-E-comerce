@@ -24,9 +24,9 @@ $id_Usuario = $_SESSION['id'];
 		
 	require_once("header.php");	
 		
-		//$sql =  "SELECT * FROM comentarios WHERE idProducto=$idProducto AND idUsuario =$id_Usuario AND idVendedor=$idVendedor ORDER BY fecha DESC";
-		//echo $sql;
-	$sql =  "SELECT * FROM comentarios WHERE idChat=1 ";
+$sql =  "SELECT * FROM comentarios WHERE idProducto=$idProducto AND idUsuario =$id_Usuario AND idVendedor=$idVendedor ORDER BY fecha DESC";
+		
+	
 
 		
 $resultado = $conexion->realizarConsulta($sql);
