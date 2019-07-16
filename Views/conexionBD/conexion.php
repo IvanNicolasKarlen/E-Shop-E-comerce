@@ -290,6 +290,13 @@ class Conexion{
 		$consulta->execute();
 		return $consulta->get_result();
 	}
+
+	public function buscarPreguntasQueHice($idUsuario){
+		$consulta=$this->msq->prepare("SELECT * FROM pregunta WHERE idComprador=?");
+		$consulta->bind_param("i",$idUsuario);
+		$consulta->execute();
+		return $consulta->get_result();
+	}
 }
 
 

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f96dc65-ba76-4360-bcfc-0685c0427f42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Views/coments.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/coments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/conexionBD/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/conexionBD/conexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/detallesProducto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/detallesProducto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/conexionBD/conexion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="249" column="39" selection-start-line="249" selection-start-column="39" selection-end-line="249" selection-end-column="39" />
+            <state relative-caret-position="492">
+              <caret line="294" column="79" selection-start-line="294" selection-start-column="79" selection-end-line="294" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -40,8 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2919">
-              <caret line="139" column="41" lean-forward="true" selection-start-line="139" selection-start-column="41" selection-end-line="139" selection-end-column="65" />
+            <state relative-caret-position="399">
+              <caret line="142" column="47" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Views/mispreguntas.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -49,13 +55,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/preguntasenpublicaciones.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+            <state>
+              <caret selection-end-line="68" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/coments.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="226">
@@ -140,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Views/checkout.html" />
         <option value="$PROJECT_DIR$/Views/product-page.html" />
         <option value="$PROJECT_DIR$/Views/products.html" />
         <option value="$PROJECT_DIR$/Views/Cliente/listarPublicaciones.php" />
@@ -186,11 +191,12 @@
         <option value="$PROJECT_DIR$/Views/mostrarChat.php" />
         <option value="$PROJECT_DIR$/Views/insertarRespuesta.php" />
         <option value="$PROJECT_DIR$/Views/mischats.php" />
-        <option value="$PROJECT_DIR$/Views/header.php" />
-        <option value="$PROJECT_DIR$/Views/conexionBD/conexion.php" />
         <option value="$PROJECT_DIR$/Views/detallesProducto.php" />
         <option value="$PROJECT_DIR$/Views/preguntasenpublicaciones.php" />
         <option value="$PROJECT_DIR$/Views/coments.php" />
+        <option value="$PROJECT_DIR$/Views/header.php" />
+        <option value="$PROJECT_DIR$/Views/conexionBD/conexion.php" />
+        <option value="$PROJECT_DIR$/Views/mispreguntas.php" />
       </list>
     </option>
   </component>
@@ -223,12 +229,6 @@
               <item name="E-Shop-E-comerce" type="462c0819:PsiDirectoryNode" />
               <item name="Views" type="462c0819:PsiDirectoryNode" />
               <item name="conexionBD" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="E-Shop-E-comerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E-Shop-E-comerce" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,18 +305,18 @@
       <workItem from="1563155707190" duration="2108000" />
       <workItem from="1563158397025" duration="16534000" />
       <workItem from="1563258352212" duration="26308000" />
-      <workItem from="1563287176471" duration="3336000" />
+      <workItem from="1563287176471" duration="3609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107769000" />
+    <option name="totallyTimeSpent" value="108042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22416107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22348994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -341,16 +341,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Views/registroExitoso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-          <folding>
-            <element signature="e#77#116#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -626,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/conexionBD/conexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="249" column="39" selection-start-line="249" selection-start-column="39" selection-end-line="249" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/detallesProducto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -654,20 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/preguntasenpublicaciones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2919">
-          <caret line="139" column="41" lean-forward="true" selection-start-line="139" selection-start-column="41" selection-end-line="139" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/coments.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -677,6 +646,34 @@
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="142" column="47" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/conexionBD/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="294" column="79" selection-start-line="294" selection-start-column="79" selection-end-line="294" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/preguntasenpublicaciones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="68" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/mispreguntas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
         </state>
       </provider>
     </entry>
