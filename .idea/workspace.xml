@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f96dc65-ba76-4360-bcfc-0685c0427f42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/ProductoBuscado.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/ProductoBuscado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/conexionBD/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/conexionBD/conexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/datos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/datos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/procesaLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/procesaLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/procesaSubirProducto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/procesaSubirProducto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/procesarValoracion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/procesarValoracion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/registro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logintp.sql" beforeDir="false" afterPath="$PROJECT_DIR$/logintp.sql" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Views/conexionBD/conexion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="203" column="4" selection-start-line="203" selection-start-column="4" selection-end-line="203" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/datos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/registrarse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-483">
+              <caret line="107" column="65" selection-start-line="107" selection-start-column="65" selection-end-line="107" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/registro.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/procesaLogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/procesarValoracion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/ProductoBuscado.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="317" column="40" lean-forward="true" selection-start-line="317" selection-start-column="40" selection-end-line="317" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/procesaSubirProducto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/detallesProducto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1555">
+              <caret line="437" column="49" selection-start-line="437" selection-start-column="49" selection-end-line="437" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#input#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>#F8694A</find>
+      <find>e</find>
+      <find>loguearUsuario</find>
+      <find>index.php</find>
+      <find>paginaCliente.php</find>
+      <find>../Cliente/</find>
+      <find>paginaCliente</find>
+      <find>../conexionBD</find>
+      <find>realizarC</find>
+      <find>me</find>
+      <find>verificacionSesion</find>
+      <find>required_once(&quot;verificacionSesion.php&quot;);</find>
+      <find>new co</find>
+      <find>NEW</find>
+      <find>COLLECTION</find>
+      <find>INMUE</find>
+      <find>$f</find>
+      <find>&quot;;</find>
+      <find>DEALS</find>
+      <find>deals</find>
+      <find>id=&quot;map&quot;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>#6675df</replace>
+      <replace>realizarConsulta</replace>
+      <replace>paginaCliente.php</replace>
+      <replace>index.php</replace>
+      <replace>Index.php</replace>
+      <replace />
+      <replace>Index</replace>
+      <replace>conexionBD</replace>
+      <replace>required_once(&quot;verificacion</replace>
+      <replace>required_once(&quot;verificacionSesion.php&quot;);</replace>
+      <replace>&lt;?php required_once(&quot;verificacionSesion.php&quot;); ?&gt;</replace>
+      <replace>'</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Cande\Documents\Cande\UnLaM\Materias en Curso\TPWeb-2\Views</dir>
+      <dir>C:\Users\Cande\Documents\Cande\UnLaM\Materias en Curso\tpweb-2\Views</dir>
+      <dir>C:\Users\Cande\Documents\Cande\UnLaM\Materias en Curso\tpweb-2</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Views/index.php" />
+        <option value="$PROJECT_DIR$/Views/index.html" />
+        <option value="$PROJECT_DIR$/Views/blank.html" />
+        <option value="$PROJECT_DIR$/Views/checkout.html" />
+        <option value="$PROJECT_DIR$/Views/product-page.html" />
+        <option value="$PROJECT_DIR$/Views/products.html" />
+        <option value="$PROJECT_DIR$/Views/Cliente/listarPublicaciones.php" />
+        <option value="$PROJECT_DIR$/Views/Cliente/SubirProducto.php" />
+        <option value="$PROJECT_DIR$/Views/pagina.html" />
+        <option value="$PROJECT_DIR$/Views/Cliente/SubirProducto.php" />
+        <option value="$PROJECT_DIR$/Views/Cliente/footer.php" />
+        <option value="$PROJECT_DIR$/Views/Cliente/CerrarSesion.php" />
+        <option value="$PROJECT_DIR$/Views/Cliente/paginaCliente.php" />
+        <option value="$PROJECT_DIR$/Views/Cliente/header.php" />
+        <option value="$PROJECT_DIR$/Views/Cliente/procesaSubirProducto.php" />
+        <option value="$PROJECT_DIR$/Views/Cliente/registroExitoso.php" />
+        <option value="$PROJECT_DIR$/Views/productoCliente.php" />
+        <option value="$PROJECT_DIR$/Views/registroExitoso.php" />
+        <option value="$PROJECT_DIR$/Views/verificacionSesion.php" />
+        <option value="$PROJECT_DIR$/Views/productosCliente.php" />
+        <option value="$PROJECT_DIR$/Views/conexionBD/direccion.php" />
+        <option value="$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/Views/login.php" />
+        <option value="$PROJECT_DIR$/Views/conexionBD/config.ini" />
+        <option value="$PROJECT_DIR$/Views/conexionBD/config.ini" />
+        <option value="$PROJECT_DIR$/Views/css/main.css" />
+        <option value="$PROJECT_DIR$/Views/registrarse.php" />
+        <option value="$PROJECT_DIR$/Views/js/localizacion.js" />
+        <option value="$PROJECT_DIR$/Views/js/maps.js" />
+        <option value="$PROJECT_DIR$/Views/SubirProducto.php" />
+        <option value="$PROJECT_DIR$/Views/listarPublicaciones.php" />
+        <option value="$PROJECT_DIR$/Views/Pagar.php" />
+        <option value="$PROJECT_DIR$/Views/CompraExitosa.php" />
+        <option value="$PROJECT_DIR$/Views/detallesProducto.php" />
+        <option value="$PROJECT_DIR$/Views/header.php" />
+        <option value="$PROJECT_DIR$/logintp.sql" />
+        <option value="$PROJECT_DIR$/Views/Index.php" />
+        <option value="$PROJECT_DIR$/Views/ProductoBuscado.php" />
+        <option value="$PROJECT_DIR$/Views/procesaSubirProducto.php" />
+        <option value="$PROJECT_DIR$/Views/procesaLogin.php" />
+        <option value="$PROJECT_DIR$/Views/procesarValoracion.php" />
+        <option value="$PROJECT_DIR$/Views/datos.php" />
+        <option value="$PROJECT_DIR$/Views/registro.php" />
+        <option value="$PROJECT_DIR$/Views/conexionBD/conexion.php" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="700" />
+    <option name="y" value="-10" />
+    <option name="width" value="960" />
+    <option name="height" value="1035" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TPWeb2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TPWeb2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TPWeb2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TPWeb2" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TPWeb2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TPWeb2" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="conexionBD" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cande\Documents\Cande\UnLaM\Materias en Curso\tpweb-2\Views" />
+      <recent name="C:\Users\Cande\Documents\Cande\UnLaM\Materias en Curso\tpweb-2\Views\Cliente" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f96dc65-ba76-4360-bcfc-0685c0427f42" name="Default Changelist" comment="" />
+      <created>1557362660180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557362660180</updated>
+      <workItem from="1557362661378" duration="364000" />
+      <workItem from="1557363214530" duration="112000" />
+      <workItem from="1557363368469" duration="708000" />
+      <workItem from="1557364624270" duration="1209000" />
+      <workItem from="1557366069317" duration="341000" />
+      <workItem from="1559055315647" duration="7890000" />
+      <workItem from="1559153794133" duration="973000" />
+      <workItem from="1559155661798" duration="3254000" />
+      <workItem from="1559433634648" duration="378000" />
+      <workItem from="1559482364837" duration="70000" />
+      <workItem from="1559526229341" duration="598000" />
+      <workItem from="1559672666010" duration="7958000" />
+      <workItem from="1560059025847" duration="7723000" />
+      <workItem from="1560217266349" duration="11000" />
+      <workItem from="1560834555800" duration="405000" />
+      <workItem from="1561445772458" duration="5000" />
+      <workItem from="1561849167630" duration="6935000" />
+      <workItem from="1562020300140" duration="14078000" />
+      <workItem from="1562097519929" duration="6471000" />
+      <workItem from="1563155707190" duration="2108000" />
+      <workItem from="1563158397025" duration="16534000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="78125000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21610738" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Registrarse/registro.php" />
+    <entry file="file://$PROJECT_DIR$/Registrarse/css/util.css" />
+    <entry file="file://$PROJECT_DIR$/Login/verificar.php" />
+    <entry file="file://$PROJECT_DIR$/Registrarse/conectarse.php" />
+    <entry file="file://$PROJECT_DIR$/Views/conectarse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Programacion Web 2/Practicas/PhpStormProyects/EjemploINIFILE/baseDeDatos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/index.html" />
+    <entry file="file://$PROJECT_DIR$/Views/blank.html" />
+    <entry file="file://$PROJECT_DIR$/Views/product-page.html" />
+    <entry file="file://$PROJECT_DIR$/Views/checkout.html" />
+    <entry file="file://$PROJECT_DIR$/Views/pagina.html" />
+    <entry file="file://$PROJECT_DIR$/Views/products.html" />
+    <entry file="file://$PROJECT_DIR$/Views/productos.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/productoCliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/CerrarSesion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/registroExitoso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+          <folding>
+            <element signature="e#77#116#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="5" column="64386" selection-start-line="5" selection-start-column="64386" selection-end-line="5" selection-end-column="64386" />
+          <folding>
+            <element signature="e#45568#45768#2" expanded="true" />
+            <element signature="e#45890#46039#2" expanded="true" />
+            <element signature="e#46185#46331#2" expanded="true" />
+            <element signature="e#46757#46920#1" expanded="true" />
+            <element signature="e#55587#55830#2" expanded="true" />
+            <element signature="e#56556#56805#2" expanded="true" />
+            <element signature="e#81351#81538#2" expanded="true" />
+            <element signature="e#81584#81773#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="4180" column="16" lean-forward="true" selection-start-line="4180" selection-start-column="16" selection-end-line="4180" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/productosCliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/conexionBD/direccion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TPWeb-2 MIO/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="138" selection-start-line="138" selection-end-line="481" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/conexionBD/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/detalleProductoCliente.php" />
+    <entry file="file://$PROJECT_DIR$/Views/css/nouislider.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/js/main2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/js/producto.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1223" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/SubirProducto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2730">
+          <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/js/maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/verificacionSesion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/js/localizacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/ProcesaAddCarrito.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="1372" column="20" selection-start-line="1372" selection-start-column="20" selection-end-line="1372" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Pagar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="24" column="71" lean-forward="true" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/CompraExitosa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logintp.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="216" column="153" selection-start-line="216" selection-start-column="153" selection-end-line="216" selection-end-column="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/detallesProducto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1555">
+          <caret line="437" column="49" selection-start-line="437" selection-start-column="49" selection-end-line="437" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#input#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/listarPublicaciones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="88" column="78" lean-forward="true" selection-start-line="88" selection-start-column="78" selection-end-line="88" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/procesaSubirProducto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="160" column="36" selection-start-line="160" selection-start-column="36" selection-end-line="162" selection-end-column="38" />
+          <folding>
+            <element signature="e#5655#5714#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/procesaLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/datos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/procesarValoracion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/ProductoBuscado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="317" column="40" lean-forward="true" selection-start-line="317" selection-start-column="40" selection-end-line="317" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/registrarse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="107" column="65" selection-start-line="107" selection-start-column="65" selection-end-line="107" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/registro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/conexionBD/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="203" column="4" selection-start-line="203" selection-start-column="4" selection-end-line="203" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
