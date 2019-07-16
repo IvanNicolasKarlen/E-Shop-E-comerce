@@ -11,6 +11,7 @@ include_once("header.php");
 
 
 <?php
+
 if (isset($_POST["detalles"])) {
 
     require_once("conexionBD/conexion.php");// incluir la configuracion de conexion a la BD

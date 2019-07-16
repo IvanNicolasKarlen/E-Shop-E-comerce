@@ -235,12 +235,19 @@ class Conexion{
 		return $nombrep;
 	}
 
-	public function buscarPreguntas($idC,$idV,$idP){
+	public function buscarPreguntasComprador($idC,$idV,$idP){
 		$consulta=$this->msq->prepare("SELECT * FROM pregunta WHERE idComprador=? AND idVendedor=? AND idProducto=?");
 		$consulta->bind_param("iii",$idC,$idV,$idP);
 		$consulta->execute();
 		return $consulta->get_result();
 
+	}
+
+	public function buscarPreguntasVendedor($idVendedor,$idP){
+		$consulta=$this->msq->prepare("SELECT * FROM pregunta WHERE idVendedor=? AND idProducto=?");
+		$consulta->bind_param("ii",$idVendedor,$idP);
+		$consulta->execute();
+		return $consulta->get_result();
 	}
 
 	public function insertarPregunta($idC,$idV,$idP,$texto){
@@ -268,6 +275,20 @@ class Conexion{
 		}else{
 			return "Ha ocurrido un error al agregar tu respuesta";
 		}
+	}
+
+	public function buscarPreguntasEnMisPublicaciones($idUsuario){
+		$consulta=$this->msq->prepare("SELECT * FROM pregunta WHERE idVendedor=?");
+		$consulta->bind_param("i",$idUsuario);
+		$consulta->execute();
+		return $consulta->get_result();
+	}
+
+	public function consultarPublicaciones($idProducto){
+		$consulta=$this->msq->prepare("SELECT * FROM producto WHERE id=?");
+		$consulta->bind_param("i",$idProducto);
+		$consulta->execute();
+		return $consulta->get_result();
 	}
 }
 

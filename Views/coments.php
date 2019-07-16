@@ -1,14 +1,20 @@
 <div id="tab4" class="tab-pane fade in">
 <?php
-$pregunta = $conexion->buscarPreguntas($id_Usuario, $idU, $idProducto);
-if($pregunta->num_rows>0){
+if($id_Usuario==$idU){
+    $pregunta = $conexion->buscarPreguntasVendedor($id_Usuario,$idProducto);
+}else{
+    $pregunta = $conexion->buscarPreguntasComprador($id_Usuario, $idU, $idProducto);
+}
+
+
+if(($pregunta->num_rows>0)){
     echo "<h4 class='text-uppercase'>Preguntas: </h4>";
     ?>
 
     <div class="row">
         <div class="col-md-6">
          <?php   while($preguntas = $pregunta->fetch_assoc()) {
-             echo "<div class='text-info'>$mensaje</div>"; ?>
+              ?>
             <div class="single-review">
                 <div class="review-heading">
                     <?php $nombreDeComprador = $conexion->traerUsuarioQueValora($preguntas['idComprador']);
